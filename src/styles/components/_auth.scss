@@ -1,0 +1,79 @@
+.auth__main{
+  align-items: center;
+  background-color: $primary;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+.auth__box-contianer{
+  background-color: $white;
+  box-shadow: 5px 5px 5px $dark-grey;
+  border-radius: .5rem;
+  padding: 2rem;
+  width: 40rem;
+}
+.auth__title{
+  color: darken($secundary, 10%);
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.auth__input{
+  border: none;
+  color: $dark-grey;
+  font-size: 1.8rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  &:focus{
+    outline: none;
+    border-bottom: 1px solid $secundary;
+  }
+  &:active{
+    border-bottom: 1px solid $light-gray;
+    animation: all .3s;
+  }
+}
+
+
+.auth_social-network{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0;
+  width: 100%;
+}
+.auth_social-network--title{
+  color: darken($secundary, 10%);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn-create-account{
+  background-color: $secundary;
+  border-radius: .2rem;
+  color: $white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  height: 4rem;
+  margin-top: 2rem;
+  padding: 7px 10px 7px 10px;
+  &:hover{
+    background-color: darken($color: $secundary, $amount: 20);
+    text-decoration: underline;
+  }
+}
+.auth__alert-error{
+  background-color: red;
+  border-radius: .5rem;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
